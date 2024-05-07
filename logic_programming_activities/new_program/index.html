@@ -1,17 +1,21 @@
 <meta charset="UTF-8">
 
 <script>
-    function pulaLinha(){
+    function pulaLinha() {
         document.write('<br><br>');
+    }
+
+    function mostraNaTela(texto) { //funcao recebendo parametro
+        document.write(texto);
     }
 
     var ano = 2024;
 
-    document.write('A idade da Ingrid é ' + (ano - 1995) + ' anos.');
+    mostraNaTela('A idade da Ingrid é ' + (ano - 1995) + ' anos.');
     pulaLinha();
-    document.write('A idade da Marjore é ' + (ano - 2007) + ' anos.');
+    mostraNaTela('A idade da Marjore é ' + (ano - 2007) + ' anos.');
     pulaLinha();
-    document.write('A idade da Marlene é ' + (ano - 1976) + ' anos.');
+    mostraNaTela('A idade da Marlene é ' + (ano - 1976) + ' anos.');
     pulaLinha();
 
     var idadeIngrid = 29;
