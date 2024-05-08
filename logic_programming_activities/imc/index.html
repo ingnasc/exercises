@@ -24,4 +24,12 @@
 
     mostra('O IMC calculado de ' + nomeInformado + ' é ' + imc + '.');
 
+    if(imc < 18.5){
+        mostra('Você está abaixo do recomendado.');
+    } else if(imc >= 18.5 && imc <= 35) {
+        mostra('Seu IMC está excelente.');
+    } else {
+        mostra('Você está acima do recomendado.');
+    }
+
 </script>
