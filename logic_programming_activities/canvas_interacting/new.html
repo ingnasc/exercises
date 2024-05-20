@@ -3,7 +3,7 @@
 <script>
     var tela = document.querySelector('canvas');
     var pincel = tela.getContext('2d');
-    var listaDeCores = ['blue', 'red', 'green']; //0.1.2
+    var listaDeCores = ['blue', 'red', 'green'];
     var indiceAtual = 0;
 
     pincel.fillStyle = 'grey';
@@ -13,11 +13,17 @@
 
         var x = evento.pageX - tela.offsetLeft;
         var y = evento.pageY - tela.offsetTop;
+        var raio = 10;
+        console.log(x + ',' + y);
+
+        if(evento.shiftKey) {
+            raio = raio + 20;
+        } 
+
         pincel.fillStyle = listaDeCores[indiceAtual];
         pincel.beginPath();
-        pincel.arc(x, y, 10, 0, 2 * 3.14);
+        pincel.arc(x, y, raio, 0, 2 * 3.14);
         pincel.fill();
-        console.log(x + ',' + y);
     }
 
     tela.onclick = desenhaCirculo;
