@@ -1,0 +1,19 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function exibirAlerta() {
+
+        alert('Cliquei!');
+
+    }
+
+    tela.onclick = exibirAlerta; //colocando a função dentro do onclick para só executar quando clicar, por isso nao coloca ()
+
+</script>
