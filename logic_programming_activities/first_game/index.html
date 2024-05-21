@@ -33,9 +33,14 @@
         return Math.floor(Math.random() * maximo);
     }
 
-    var xAleatorio = sorteiaPosicao(600);
-    var yAleatorio = sorteiaPosicao(400);
+    function atualizaTela() {
+        limpaTela();
+        var xAleatorio = sorteiaPosicao(600);
+        var yAleatorio = sorteiaPosicao(400);
 
-    desenhaAlvo(xAleatorio, yAleatorio);
+        desenhaAlvo(xAleatorio, yAleatorio);
+    }
+
+setInterval(atualizaTela, 1000);
 
 </script>
