@@ -23,8 +23,19 @@
         pincel.clearRect(0, 0, 600, 400);
     }
 
-    desenhaCirculo(100, 100, raio + 20, 'red');
-    desenhaCirculo(100, 100, raio + 10, 'white');
-    desenhaCirculo(100, 100, raio, 'red');
+    function desenhaAlvo(x, y) {
+        desenhaCirculo(x, y, raio + 20, 'red');
+        desenhaCirculo(x, y, raio + 10, 'white');
+        desenhaCirculo(x, y, raio, 'red');
+    }
+
+    function sorteiaPosicao(maximo){
+        return Math.floor(Math.random() * maximo);
+    }
+
+    var xAleatorio = sorteiaPosicao(600);
+    var yAleatorio = sorteiaPosicao(400);
+
+    desenhaAlvo(xAleatorio, yAleatorio);
 
 </script>
