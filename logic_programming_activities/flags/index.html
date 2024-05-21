@@ -46,4 +46,17 @@ function desenhaBandeiraAlemanha() {
     pincel.fillRect(0, 266, 600, 133);
 }
 
+var mostraBrasil = true;
+function trocaBandeira() {
+    if (mostraBrasil == true) {
+        desenhaBandeiraBrasil();
+        mostraBrasil = false; //nao escreve var de novo
+    } else {
+        desenhaBandeiraAlemanha();
+        mostraBrasil = true;
+    }
+}
+
+setInterval(trocaBandeira, 1000);
+
 </script>
