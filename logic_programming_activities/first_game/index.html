@@ -1,4 +1,4 @@
-<canvas width="1000" height="1000"></canvas>
+<canvas width="1000" height="800"></canvas>
 
 <script>
 
@@ -9,7 +9,7 @@
     var yAleatorio;
 
     pincel.fillStyle = 'lightgray';
-    pincel.fillRect(0, 0, 1000, 1000);
+    pincel.fillRect(0, 0, 1000, 800);
 
     function desenhaCirculo(x, y, raio, cor) {
         pincel.fillStyle = cor;
@@ -19,7 +19,7 @@
     }
 
     function limpaTela() {
-        pincel.clearRect(0, 0, 600, 400);
+        pincel.clearRect(0, 0, 1000, 800);
     }
 
     function desenhaAlvo(x, y) {
@@ -35,8 +35,8 @@
     function atualizaTela() {
         limpaTela();
         
-        xAleatorio = sorteiaPosicao(600);
-        yAleatorio = sorteiaPosicao(400);
+        xAleatorio = sorteiaPosicao(1000);
+        yAleatorio = sorteiaPosicao(800);
 
         desenhaAlvo(xAleatorio, yAleatorio);
     }
