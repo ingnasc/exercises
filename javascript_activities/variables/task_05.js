@@ -3,7 +3,7 @@
 let fora = 5;
 
 if(true) {
-    let dentro = 6;
+    let dentro = 6; //só funciona dentro do bloco
     console.log(fora);
     console.log(dentro);
 }
