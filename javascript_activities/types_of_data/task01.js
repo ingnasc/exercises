@@ -2,4 +2,5 @@
 
 const frase = 'A frase aqui.';
 
+console.log(frase.length);
 console.log(frase.toUpperCase());
