@@ -61,3 +61,22 @@ a {
     font-weight: 700;
 }
 
+.menu { 
+    background-color: #FF6CB5;
+    height: 40px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.menu li {
+    display: inline-block;
+    line-height: 2.5;
+    margin: 0 89px;
+}
+
+.menu ul li a { 
+    color: #fff;
+    font-weight: normal;
+    text-decoration: underline;
+
+}
